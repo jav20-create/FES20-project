@@ -76,13 +76,11 @@ footer{
       margin: 0px 40px;}
 
 #cta{
-      position: relative;
+       position: relative;
     display: flex;
     width: 100%;
     height: 100%;
-    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .row {
     width: 100%;
@@ -1182,13 +1180,13 @@ CALL TO ACTION
 */
 
 .cta__wrap{
-position: relative;
+    position: relative;
+    display: flex;
     background-color: #6415ff;
-display: flex;
-flex-wrap: wrap;
     overflow: hidden;
-    
-transition: transform 500ms ease;
+    max-width: 1200px;
+    max-height: 300px;
+    flex-wrap: wrap;
 }
 
 
@@ -1203,57 +1201,56 @@ align-items: center;
 
 }
 .curve__design{
-        width: 300px;
+    width: 300px;
     height: 300px;
     border-radius: 50%;
     z-index: 1;
     background: radial-gradient(circle, #5110f4 70%, transparent 70%);
-    transform: translate(calc(50vw - 827px), 36%) rotate(135deg);
-
+    transform: translate(-100px, 90px) rotate(135deg);
 }
 .container__content-btn-title{
-     position: relative;
+      position: relative;
     display: flex;
     width: 100%;
-    max-width: 770px;
+    max-width: 906px;
     height: 100%;
-    top: 124px;
+    bottom: 190px;
+    left: 45px;
     z-index: 2;
-    justify-content: center;
 }
 .container__subtitle-3{
-       position: relative;
-    font-size: calc(3rem - 12px);
+     position: relative;
+    font-size: calc(3rem - 16px);
     text-align: left;
     font-weight: 700;
     color: #ffffff;
     width: 100%;
+    max-width: 850px;
     height: 100%;
-    right: 190px;
-    max-height: 10px;
+   
 
 }
 .btn__types{
-       position: relative;
+      position: relative;
     display: flex;
     width: 100%;
-    max-width: 49px;
+    max-width: 70px;
     flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 5px;
 }
 .rd{
-     position: relative;
+      position: relative;
     width: 100%;
-    min-width: 140px;
-    height: 50px;
+    height: 100%;
+    white-space: nowrap;
+    max-height: 50px;
     border-radius: 40px;
     background-color: rgba(255, 5, 5, 0.992);
     color: rgba(999, 999, 999, 1);
     border: none;
     z-index: 1;
-    margin-left: 5px;
-
+    padding: 0 100px 0 40px;
 }
 .purp{
        position: relative;
@@ -1274,12 +1271,12 @@ background-color: #ffffff;
 color: #590af7;
 }
 .curve__design-2{
-       width: 300px;
+      width: 300px;
     height: 300px;
     border-radius: 50%;
     z-index: 1;
     background: radial-gradient(circle,  #5110f4 70%, transparent 70%);
-    transform: translate(calc(25vw - 346px), -45%) rotate(140deg);
+    transform: translate(890px, -545px) rotate(140deg);
 }
 
 
