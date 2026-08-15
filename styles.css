@@ -10,16 +10,16 @@ scroll-behavior: smooth;
 }
 h1{
          position: relative;
-    font-size: calc(3rem - 2px);
+    font-size: calc(4rem - 20px);
     line-height: 1.15;
 }
 h2{
-font-size: 48px;
+font-size: calc(3rem - 12px);
 line-height: 1.15;
 }
 h3{
 position: relative;
-font-size: 32px;
+font-size: calc(2rem - 12px);
 line-height: 1.5;
 }
 p{
@@ -485,15 +485,16 @@ TEMPLATES
    }
 
 .btn{
-     background-color: #6105ff;
+       background-color: #6105ff;
     color: #fff;
     border: none;
     border-radius: 40px;
     z-index: 2;
     position: relative;
-    width: calc(12vw - 3px);
-    margin: 5px 5px;
-    height: calc(11vh - 2px);
+    width: 100%;
+    max-width: 180px;
+    height: 100%;
+    right: 5px;
 }
 .btn:hover{
 background-color: rgb(38, 2, 130);
@@ -526,7 +527,8 @@ cursor: pointer;
 }
 .eml,
 .btn{
-    grid-area: stack;
+        grid-area: stack;
+    max-height: 70px;
 }
 .container__img-logo{
        width: 100%;
