@@ -38,12 +38,11 @@ ul{
 list-style-type: none;
 }
 nav{
-     position: relative;
+       position: relative;
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    width: 134%;
     align-items: center;
-    justify-content: flex-start;
 }
 button{
 border-radius: 40px;
@@ -104,11 +103,11 @@ footer{
     min-height: 750px;
 }
 .row__container{
-     display: flex;
+       display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
-    gap: 5%;
+    gap: 8%;
 }
 .row-1{
 display: flex;
@@ -130,11 +129,11 @@ display: flex;
          width: 100%;
     height: auto;}
 .header__content{
-       width: 100%;
+      width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 .header__discription{
       width: 100%;
@@ -279,9 +278,10 @@ TREACT
 */
 
 .nav__row{
-     display: flex;
+        display: flex;
     width: 100%;
-    justify-content: flex-start;
+    max-width: 1320px;
+    justify-content: space-between;
 }
 
 .nav__container{
@@ -485,15 +485,14 @@ TEMPLATES
    }
 
 .btn{
-       background-color: #6105ff;
+      background-color: #6105ff;
     color: #fff;
     border: none;
     border-radius: 40px;
     z-index: 2;
     position: relative;
-    width: 100%;
-    max-width: 180px;
-    height: 100%;
+    width: calc(20vw - 110px);
+    height: calc(20vh - 126px);
     right: 5px;
 }
 .btn:hover{
@@ -512,9 +511,10 @@ cursor: pointer;
 .container__form{
        position: relative;
     width: 100%;
+    top: 10px;
     max-width: 519px;
     height: 100%;
-    max-height: 108px;
+    max-height: 86px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1920,16 +1920,15 @@ width: calc(46vw - 25px);
     
 }
 .container__color-logo{
-      display: flex;
+       display: flex;
     width: 100%;
-    max-width: 480px;
+    max-width: 370px;
     height: 100%;
-    min-height: 183px;
-    justify-content: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
+    gap: 20px;
 }
+
 .container__content-l-v{
        position: relative;
     width: 100%;
@@ -1982,7 +1981,7 @@ width: calc(46vw - 25px);
     max-width: 30px;
     height: 100%;
     max-height: 30px;
-    padding: 4%;
+    padding: 7%;
 transform: translate(-7px , 0px);
 }
 .box_dots-p{
@@ -2278,7 +2277,7 @@ top: 20px;
     max-height: 100px;
 }
 .container__content-small{
-       max-width: 345px;
+        max-width: 440px;
     display: flex;
     justify-content: center;}
 .container__img-logo{
@@ -2307,15 +2306,18 @@ top: 20px;
     width: calc(52rem - 7px);
     height: calc(6rem - 50px);
 }
+.container__content-1{
+   
+    bottom: 20px;
+}
 .block__icon
 {
 position:relative;
 top: 20px;
 }
 .container__row{
-    position: relative;
-    column-gap: 20px;
-    top: 170px;
+       position: relative;
+    top: 140px;
 }
 .subject__row-reverse-2{
     display: flex;
@@ -2335,10 +2337,28 @@ top: 20px;
     width: 100%;
     max-width: 890px;
 }
+.container__color-logo{
+      display: flex;
+    width: 100%;
+    max-width: 215px;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 .container__4
 {
     position: relative;
     top: 480px;
+}
+.container__color-content{
+       width: 100%;
+    height: 100%;
+    max-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    right: 6px;
 }
 .container-column{
     position: relative;
@@ -2372,13 +2392,14 @@ footer{        position: relative;
     max-width: 1000px;
 }
 .row__small{
-    top: 207px;}
+        top: 65px;}
 .container__colom{
 row-gap: 10px;
 }
 .subject__row-reverse{
-    position: relative;
-    top: 224px;
+      position: relative;
+    top: 84px;
+    max-width: 760px;
 }
 .box_dots{
     left: 82%;
