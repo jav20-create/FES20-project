@@ -37,13 +37,7 @@ text-decoration: none;
 ul{
 list-style-type: none;
 }
-nav{
-       position: relative;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-}
+
 button{
 border-radius: 40px;
 cursor: pointer;
@@ -63,16 +57,12 @@ footer{
     overflow: hidden;
     height: 300px;
 }
-#treact,
-#templates,
-#profession,
-#sale,
-#values,
-#pricing,
-#testimonial,
-#steps
-{
-      margin: 0px 40px;}
+header{
+      display: flex;
+    justify-content: center;
+}
+
+
 
 #cta{
        position: relative;
@@ -277,18 +267,16 @@ TREACT
 
 */
 
-.nav__row{
-        display: flex;
-    width: 100%;
-    max-width: 1320px;
-    justify-content: space-between;
-}
+
 
 .nav__container{
-     display: flex;
-    position: relative;
-    width: 12%;
-    justify-content: flex-end;
+      width: 100%;
+    max-width: 1440px;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
 }
 .nav__wrapper{
       display: flex;
@@ -296,6 +284,11 @@ TREACT
     width: 55%;
     align-items: center;
     justify-content: space-around;
+}
+.nav__wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .nav__logo{
        font-weight: 900;
@@ -466,7 +459,7 @@ TEMPLATES
 
 
 .header__container{
-    width: 40%;
+      width: 100%;
     margin: 0 20px;
 }
 .header__description{
@@ -474,16 +467,18 @@ TEMPLATES
     
 }
 
+
+
 .container__content-small{
-     position: relative;
+       position: relative;
     color: rgb(114, 137, 169);
-    font-size: calc(3rem - 22px);
+    font-size: calc(2rem - 14px);
     width: 100%;
     height: 100%;
-    line-height: 2.5;
+    line-height: 2;
     font-weight: 700;
-   }
-
+    top: 50px;
+}
 .btn{
        background-color: #6105ff;
     color: #fff;
@@ -523,11 +518,11 @@ cursor: pointer;
     margin: 0 auto;
 }
 .container__img-logo{
-       width: 100%;
+      width: 100%;
     position: relative;
     opacity: 0.5;
     height: auto;
-    bottom: 20px;
+    top: 55px;
 }
 .container__img{
      width: calc(100% - 3px);
@@ -1415,13 +1410,7 @@ p{
 header{
     height: calc(100vh - 400px);
 }
-nav{
-      width: 150%;
-}
-.nav__row{
-    display: flex;
-    width: 62%;
-    justify-content: center;
+
 }
 footer{
        background-color: #6415ff;
@@ -1443,11 +1432,7 @@ footer{
     align-content: flex-end;
     margin-top: -138px;
 }
-.row{
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-}
+
 .container__content-l-s{
       color: rgb(114, 137, 169);
     width: 100%;
@@ -1537,24 +1522,10 @@ font-size: calc(3rem - 25px);
     width: 100%;
     min-width: 350px;
 }
-.nav__row{
-width: 70%;
-}
-
-.nav__wrapper{
-    width: 65%;}
-.nav__container{
-    width: 5%;
-}
 .nav__logo{
     font-size: calc(2rem - 3px);
 }
-.nav-links{
-    width: 78%;
-}
-.nav-actions{
-        width: 20%;
-}
+
 .nav-link{
     font-size: 14px;
 }
@@ -1562,54 +1533,25 @@ width: 70%;
    font-size: calc(2rem - 16px);
 padding: 12% 90%;
 }
-.header__description{
-margin: 0 -50px;
-}
-.row__container{
-    max-width: 1025px;}
 
 
-.header__content{
-       width: 100%;
-    height: 100%;
-    gap: 2px;
-}
 
-.header__img-wrapper{
-       width: 90%;
-    height: auto;
-}
-.container__img{
-width: calc(46vw - 25px);
-   
+
+
+
+
      
-}
+
 .container__title--sub-1-2{
        font-weight: 600;
     text-align: left;
     width: calc(26rem - 63px);
     height: calc(9rem - 70px);
 }
-.container__img-logo{
-    max-width: 400px;
-}
-.header__discription{
-       width: 100%;
-    height: 100%;
-}
 
 
-.container__content-small{
-      position: relative;
-    color: rgb(114, 137, 169);
-    font-size: calc(2rem - 14px);
-    width: 100%;
-    max-width: 350px;
-    height: 100%;
-    max-height: 36px;
-    line-height: 2;
-    font-weight: 700;
-}
+
+
 .container__subtitle-2{
     display: flex;
     text-align: left;
@@ -2196,6 +2138,7 @@ max-width: 1000px;
     transform: translate(110px, -320px);
 }
 }
+
 @media(max-width: 970px){
 .header__img-wrapper{
        width: 100%;
@@ -2563,15 +2506,13 @@ footer{
     max-width: 768px;
     margin: 0 auto;
 }
-.nav__row{
-       width: 80%;
-    justify-content: space-around;
-}
+
+
 .nav__container{
-       display: flex;
-    width: 20%;
+        display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: flex-start;
+    max-width: 680px;
 }
 .container__wrapper{
        display: flex;
@@ -2943,7 +2884,11 @@ display: none;
     justify-content: flex-end;
 }
 .nav__wrapper{
-    display: none;
+      display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    max-width: 42px;
 }
 .nav__img{
     width: 100%;
@@ -3341,9 +3286,7 @@ top:49%;
     left: 86%;}
 }
 @media (max-width: 550px){
-#treact{
-    margin: 4px 4px;
-}
+
 h1{
           position: relative;
     font-size: 24px;
@@ -3358,19 +3301,8 @@ p{
     font-size: 12px;
     line-height: 1.625;
 }
-nav{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    min-width: 425px;
-    align-items: center;
-}
-header{
-       display: flex;
-    flex-direction: column;
-    height: calc(100vh + 243px);
-}
+
+
 footer{
     background-color: #6415ff;
     background-size: cover;
@@ -3408,11 +3340,7 @@ footer{
     justify-content: center;
     gap: 310px;
 }
-.nav__container{
-        display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 .row__container{
        display: flex;
     flex-direction: row;
@@ -3560,10 +3488,10 @@ footer{
     max-width: 400px;
 }
 .btn_menu {
-      display: block;
+       display: block;
     font-size: 30px;
     width: 100%;
-    max-width: 0;
+    max-width: 40px;
     height: 100%;
 }
 .nav__img{
